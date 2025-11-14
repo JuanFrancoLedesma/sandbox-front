@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Websocket } from "./websocket/websocket";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, Websocket],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
